@@ -1,0 +1,116 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Oxygen', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    color: blue;
+}
+
+h2{
+    font-size: 1.5em;
+    color:darkslategrey;
+}
+p{
+    font-size: 1.2em;
+    color: darkmagenta;
+}
+
+/* header section */
+#header{
+    height: 60px;
+    padding: 0 10em;
+    border-bottom: 2px solid #cecece;
+    display: flex;
+}
+
+.header-brand{
+    width: 25%;
+    padding-top: 1em;
+}
+
+.header-brand h3{
+    font-size: 1.2em;
+    color: #5d5d5d;
+    margin: 0;
+}
+
+.header-menu{
+    width: 75%;
+    text-align: end;
+    padding-top: 1em;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+    font-size: 1.2em;
+}
+
+/* home section */
+#home{
+    height: inherit;
+}
+
+.img-container{
+    position: absolute;
+    margin-top: 10em;
+    margin-left: 15%;
+}
+
+.profile{
+    clip-path: circle(40%);
+    aspect-ratio: 1 / 1;
+    width: 80%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.profile:hover{
+    clip-path: circle(50%);
+}
+
+.description{
+    position: absolute;
+    margin-top: 15em;
+    margin-left: 50%;
+}
+
+/* skills sections */
+
+#skills{
+    height: 100vh;
+    margin-left: 10%;
+}
+
+p1{
+    margin-left: 15%;
+}
+
+@media screen and  (max-width: 420px) {
+    #header{
+        padding: 0 2em;
+    }
+    .header-brand, .header-menu{
+        width: 50%;
+    }
+    .img-container{
+        margin-top: 2em;
+    }
+    .description{
+        margin-top: 17em;
+        margin-left: 10%;
+    }
+    #skills{
+        margin-right: 10%;
+    }
+}
+
+
